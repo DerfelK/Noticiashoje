@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Notícias Hoje</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-2">
+                Notícias Hoje
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex mt-2">
+                    <li class="nav-item fw-bold">
+                        <a href="#destaques" class="nav-link">
+                            <i class="bi bi-journal-plus"></i>
+                            Destaques
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#economia" class="nav-link">
+                            <i class="bi bi-cash-coin"></i>
+                            Economia
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#entretenimento" class="nav-link">
+                            <i class="bi bi-tv"></i>
+                            Entretenimento
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#entre-em-contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Entre em contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+
+        <section id="destaques">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./assets/slides/economia1.jpg" alt="foto sobre economia" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/slides/show1.jpg" alt="show sertanejo" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/slides/marevick-slider.jpg" alt="pôster filme maverick" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+    
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-xs-1 mb-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    Economia
+                                </div>
+                                <img src="./assets/slides/economia-slider.jpg" class="d-block w-100 my-img" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Projeção econômica
+                                    </h4>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga velit omnis dolorum necessitatibus autem recusandae est pariatur. Commodi, voluptatibus placeat, odit nobis nesciunt tenetur illo autem hic deleniti quam nemo!
+                                    </p>
+                                    <a href="#" class="btn btn-outline-light">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-4 col-md-6 col-xs-1 mb-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    Entretenimento
+                                </div>
+                                <img src="./assets/slides/metallica-slider.webp" class="d-block w-100 my-img" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Metallica
+                                    </h4>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga velit omnis dolorum necessitatibus autem recusandae est pariatur. Commodi, voluptatibus placeat, odit nobis nesciunt tenetur illo autem hic deleniti quam nemo!
+                                    </p>
+                                    <a href="#" class="btn btn-outline-light">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-xl-4 col-md-6 col-xs-1 mb-4">
+                            <div class="card text-bg-dark">
+                                <div class="card-header">
+                                    Entretenimento
+                                </div>
+                                <img src="./assets/creed2.jpg" class="d-block w-100 my-img" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Creed 2
+                                    </h4>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga velit omnis dolorum necessitatibus autem recusandae est pariatur. Commodi, voluptatibus placeat, odit nobis nesciunt tenetur illo autem hic deleniti quam nemo!
+                                    </p>
+                                    <a href="#" class="btn btn-outline-light">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="economia" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center text-colored fw-bold">Economia</h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./assets/economia/financas-pessoais.jpg.jpg" alt="calculadora e moedas" class="d-block w-100 rounded mb-2 my-img"/>
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-bank"></i>
+                            Finanças
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam autem harum quia quisquam sint magnam voluptatum, non dicta illo facere neque ullam cumque eos! Minus non iste dolorum amet dolor!
+                        </p>
+                        <div class="d-grid">
+                            <a href="#" class="btn btn-outline-secondary">leia mais</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/economia/renda-fixa.jpg" alt="renda fixa" class="d-block w-100 rounded mb-2 my-img"/>
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-piggy-bank-fill"></i> 
+                            Renda Fixa
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam autem harum quia quisquam sint magnam voluptatum, non dicta illo facere neque ullam cumque eos! Minus non iste dolorum amet dolor!
+                        </p>
+                        <div class="d-grid">
+                            <a href="#" class="btn btn-outline-secondary">leia mais</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/economia/dolar-real.jpg" alt="dólar x real" class="d-block w-100 rounded mb-2 my-img"/>
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-currency-dollar"></i> 
+                            Dólar
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam autem harum quia quisquam sint magnam voluptatum, non dicta illo facere neque ullam cumque eos! Minus non iste dolorum amet dolor!
+                        </p>
+                        <div class="d-grid">
+                            <a href="#" class="btn btn-outline-secondary">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="entretenimento" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center text-colored fw-bold">Entretenimento</h2>
+                </div>
+                <div class="row mt-4">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#filmes" class="nav-link fw-bold text-start text-colored active">
+                                Filmes
+                            </button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#series" class="nav-link fw-bold text-start text-colored">
+                                Séries
+                            </button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#shows" class="nav-link fw-bold text-start text-colored">
+                                Shows
+                            </button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#esportes" class="nav-link fw-bold text-start text-colored">
+                                Esporte
+                            </button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+
+                            <div class="tab-pane active" id="filmes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./assets/filmes/avatar.jpeg" alt="pôster avatar" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Avatar 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/filmes/maverick.jpg" alt="top gun: maverick" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Top Gun: Maverick</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/filmes/raya.webp" alt="raya e o dragão" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Raya e o dragão</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/filmes/vingadores.webp" alt="Filme dos vingadores" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Vingadores</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/creed2.jpg" alt="Creed 2" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Creed 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="series">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./assets/séries/cobra-kai-1.webp" alt="Cobra kai" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Cobra Kai</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/séries/stranger.avif" alt="Stranger Things" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Stranger Things</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/séries/the-last-of-us.jpg" alt="The last of us" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">The last of us</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="shows">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./assets/slides/metallica-slider.webp" alt="Metallica" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Metallica</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/slides/show1.jpg" alt="Sertanejo" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Sertanejo</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/coldplay.webp" alt="Coldplay" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Coldplay</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="esportes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./assets/esporte/atletismo.jpg" alt="atletismo" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Atletismo</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/esporte/judo.webp" alt="Judô" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Judô</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/esporte/natacao.jpg" alt="natação" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Natação</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./assets/esporte/volei.jpg" alt="vôlei" class="d-block w-100 my-img2" />
+                                        <h5 class="text-colored fw-bold mt-2">Vôlei</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis pariatur doloremque.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="entre-em-contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center text-colored fw-bold">Entre em contato</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome:</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required/>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required/>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label fw-bold text-colored">Seu telefone (opcional):</label>
+                                <input type="tel" id="tel" name="tel" class="form-control"/>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-secondary fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua hoje tem notícia, 123, Bairro da informação, Rio de janeiro - RJ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container d-flex p-4 justify-content-between">
+            <div class="text-light fs-5 fw-bold">
+                Notícias Hoje
+            </div>
+            <div class="text-light fs-5">
+                Todos os direitos reservados - 2023
+            </div>
+        </div>
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

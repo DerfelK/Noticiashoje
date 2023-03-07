@@ -1,0 +1,85 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar,
+footer {
+    background-color: #7c7c7c;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #7c7c7c;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #e4e4e4;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+}
+
+#destaques,
+#entretenimento {
+    background-color: #e4e4e4;
+}
+
+.text-colored {
+    color: #7c7c7c;
+}
+
+.my-img {
+    height: 350px; 
+    object-fit: cover;
+}
+
+.my-img2 {
+    height: 200px;
+    object-fit: cover;
+}
+
+.nav-cardapio .nav-link.active {
+    background-color: #7c7c7c;
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #7c7c7c;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+ }
+
+footer {
+    margin-top: 56px;
+}
+
+.carousel-item img {
+    width: 1400px;
+    height: 700px;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+        width: 550px;
+    }
+}
